@@ -8,7 +8,7 @@
 </div>
 
 <div class="row marketing">
-  <div class="col-lg-6">
+  <div class="col-sm-12">
     <div id="messages"></div>
     <hr/>
     <input id="chat-input" type="text" placeholder="Message..." style="width: 100%;"></input>
