@@ -2,12 +2,13 @@
 
 Demonstration chat app built in Phoenix 1.3.0 from [Phoenix Guides](https://hexdocs.pm/phoenix/channels.html#tying-it-all-together).
 
-- [x] Channels Sample application [
+- [x] **Channels Sample application**
+  - [x] Overview [
     [guide](https://hexdocs.pm/phoenix/channels.html#tying-it-all-together) |
     [code](https://github.com/smeade/phoenixchat) |
     [demo](http://phx-009-channels.herokuapp.com/)
     ]
-  - [x] uncomment the “room:*” channel definition [
+  - [x] uncomment the “room:” channel definition [
     [code](https://github.com/smeade/phoenixchat/blob/master/lib/hello_web/channels/user_socket.ex#L5)
     ]
   - [x] define a HelloWeb.RoomChannel module [
