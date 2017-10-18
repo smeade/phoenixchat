@@ -1,20 +1,40 @@
-# Hello
+# Hello Phoenix Chat
 
-To start your Phoenix server:
+Demonstration chat app built in Phoenix 1.3.0 from [Phoenix Guides](https://hexdocs.pm/phoenix/channels.html#tying-it-all-together).
 
-  * Install dependencies with `mix deps.get`
-  * Create and migrate your database with `mix ecto.create && mix ecto.migrate`
-  * Install Node.js dependencies with `cd assets && npm install`
-  * Start Phoenix endpoint with `mix phx.server`
+- [x] Sample application [
+    [guide](https://hexdocs.pm/phoenix/channels.html#tying-it-all-together) |
+    [code](https://github.com/smeade/phoenixchat) |
+    [demo](http://phx-009-channels.herokuapp.com/)
+    ]
+  - [x] uncomment the “room:*” channel definition
+    [code](https://github.com/smeade/phoenixchat/blob/master/lib/hello_web/channels/user_socket.ex#L5)
+  - [x] define a HelloWeb.RoomChannel module
+    [code](https://github.com/smeade/phoenixchat/blob/master/lib/hello_web/channels/room_channel.ex)
+  - [x] Joining Channels [[guide](https://hexdocs.pm/phoenix/channels.html#joining-channels)]
+    - [x] authorize clients to join topic [
+      [code](https://github.com/smeade/phoenixchat/blob/master/lib/hello_web/channels/room_channel.ex)
+      ]
+    - [x] set our room name to “room:lobby” [
+      [code](https://github.com/smeade/phoenixchat/blob/master/assets/js/socket.js#L57)
+      ]
+      [x] join room [
+      [code](https://github.com/smeade/phoenixchat/blob/master/assets/js/socket.js#L56-L57)
+      ]
+    - [x] import assets/js/socket.js [
+      [code](https://github.com/smeade/phoenixchat/blob/master/assets/js/app.js#L21)
+      ]
+    - [x] add containers to hold our chat messages [
+      [code](https://github.com/smeade/phoenixchat/blob/master/lib/hello_web/templates/page/index.html.eex#L13-L15)
+      ]
+    - [x] push an event over the channel with the message body [
+      [code](https://github.com/smeade/phoenixchat/blob/master/assets/js/socket.js#L64-L70)
+      ]
+    - [x] listen for new messages and append them to our messages container [
+      [code](https://github.com/smeade/phoenixchat/blob/master/assets/js/socket.js#L64-L70)
+      ]
+  - [x] Incoming Events [
+    [guide](https://hexdocs.pm/phoenix/channels.html#incoming-events) |
+    [code](https://github.com/smeade/phoenixchat/blob/master/lib/hello_web/channels/room_channel.ex#L11-L14)
+    ]
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
-
-Ready to run in production? Please [check our deployment guides](http://www.phoenixframework.org/docs/deployment).
-
-## Learn more
-
-  * Official website: http://www.phoenixframework.org/
-  * Guides: http://phoenixframework.org/docs/overview
-  * Docs: https://hexdocs.pm/phoenix
-  * Mailing list: http://groups.google.com/group/phoenix-talk
-  * Source: https://github.com/phoenixframework/phoenix

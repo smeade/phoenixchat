@@ -2,8 +2,8 @@
   <h2><%= gettext "Welcome to %{name}!", name: "Phoenix Chat" %></h2>
   <p class="lead">A simple sample chat app.</p>
   <p>
-    <a href="https://github.com/smeade/hellophoenix">README</a>
-    <a href="https://github.com/smeade/phoenixchat">Source</a>
+    <a href="https://github.com/smeade/hellophoenix#channels">README</a> |
+    <a href="https://github.com/smeade/phoenixchat">Source</a> |
     <a href="https://hexdocs.pm/phoenix/channels.html">Phoenix Guides</a>
   </p>
 </div>
@@ -12,6 +12,6 @@
   <div class="col-lg-6">
     <div id="messages"></div>
     <hr/>
-    <input id="chat-input" type="text" style="width: 100%;"></input>
+    <input id="chat-input" type="text" placeholder="Message..." style="width: 100%;"></input>
   </div>
 </div>
