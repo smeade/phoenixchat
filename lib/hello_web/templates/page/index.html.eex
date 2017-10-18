@@ -2,7 +2,6 @@
   <h2><%= gettext "Welcome to %{name}!", name: "Phoenix Chat" %></h2>
   <p class="lead">A simple sample chat app.</p>
   <p>
-    <a href="https://github.com/smeade/hellophoenix#channels">README</a> |
     <a href="https://github.com/smeade/phoenixchat">Source</a> |
     <a href="https://hexdocs.pm/phoenix/channels.html">Phoenix Guides</a>
   </p>
