@@ -1,9 +1,16 @@
 <div class="jumbotron">
   <h2><%= gettext "Welcome to %{name}!", name: "Phoenix Chat" %></h2>
-  <p class="lead">A simple sample chat app.</p>
+  <p class="lead">
+    A simple sample chat app<br/>
+    as found in the Phoenix Guides.
+  </p>
   <p>
     <a href="https://github.com/smeade/phoenixchat">Source</a> |
-    <a href="https://hexdocs.pm/phoenix/channels.html">Phoenix Guides</a>
+    Thanks <a href="https://hexdocs.pm/phoenix/channels.html">Phoenix Guides</a> contributors <br/>
+    <a href="https://github.com/chrismccord">chrismccord</a>,
+    <a href="https://github.com/cschar">cschar</a>,
+    <a href="https://github.com/dogecon">dogecon</a>,
+    <a href="https://github.com/Gazler">Gazler</a>, and others(?).
   </p>
 </div>
 
